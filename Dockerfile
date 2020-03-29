@@ -1,5 +1,4 @@
 FROM rust:alpine
-MAINTAINER Ed Asriyan <ed-asriyan@protonmail.com>
 
 # https://stackoverflow.com/a/30873179
 # https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md#running-on-alpine
@@ -31,8 +30,11 @@ RUN npm ci
 # build the app
 ADD cli.js .
 ADD index.js .
+ADD extract.js .
+ADD zipit.js .
 
 ENV USE_SANDBOX false
 ENV CHROMIUM_PATH /usr/bin/chromium-browser
 
-CMD node cli.js /source
+# CMD node cli.js /source && node extract.js /source && node zipit.js
+CMD node zipit.js

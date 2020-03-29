@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/ed-asriyan/tgs-to-gif#readme",
   "dependencies": {
-    "puppeteer-lottie": "^1.0.9"
+    "gif-extract-frames": "^1.0.2",
+    "pathinfo": "^0.1.0",
+    "puppeteer-lottie": "^1.0.9",
+    "zip-a-folder": "0.0.12"
   },
   "devDependencies": {
     "argparse": "^1.0.10"
