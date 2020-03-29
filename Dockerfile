@@ -36,5 +36,4 @@ ADD zipit.js .
 ENV USE_SANDBOX false
 ENV CHROMIUM_PATH /usr/bin/chromium-browser
 
-# CMD node cli.js /source && node extract.js /source && node zipit.js
-CMD node zipit.js
+CMD node cli.js /source && node extract.js /source && node zipit.js
